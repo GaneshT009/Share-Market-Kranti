@@ -1,0 +1,49 @@
+<div class="navb">
+    <div class="main">
+        <nav class="nav1 navbar navbar-expand-lg rounded" [ngClass]="{'scrolled': isScrolled}" (window:scroll)="onWindowScroll()" aria-label="Thirteenth navbar example">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample11"
+                aria-controls="navbarsExample11" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+      
+              <div class="collapse navbar-collapse d-lg-flex"id="navbarsExample11">
+                <a class="navbar-brand col-lg-2 ms-4" routerLink="/frontend/front/home">
+                  <img class="logo" src="/assets/images/smk-logo.png" alt="" />
+                </a>
+                <ul class="navbar-nav col-lg-6 justify-content-lg-center ms-5">
+                  <li class="nav-item li1">
+                    <a class="nav-link text-black" aria-current="page" routerLink="/frontend/front/home">Home</a>
+                  </li>
+                  <li class="nav-item dropdown li1">
+                    <a class="nav-link dropdown-toggle text-black" href="#" data-bs-toggle="dropdown"
+                      aria-expanded="false">About</a>
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a class="dropdown-item" routerLink="/frontend/front/about">About Share Market Kranti</a>
+                      </li>
+                      <li><a class="dropdown-item" href="#">Blogs</a></li>
+                    </ul>
+                  </li>
+                  <!-- <li class="nav-item li1">
+                    <a class="nav-link text-black" routerLink="/frontend/front/products">Products</a>
+                  </li> -->
+                  <li class="nav-item li1">
+                    <a class="nav-link text-black" routerLink="/frontend/front/courses">Courses</a>
+                  </li>
+                  <!-- <li class="nav-item li1">
+                    <a class="nav-link text-black">Become a Partner</a>
+                  </li> -->
+                  <li class="nav-item li1">
+                    <a class="nav-link text-black" routerLink="/frontend/front/contact">Contact Us</a>
+                  </li>
+                </ul>
+                <div class="d-lg-flex col-lg-3 justify-content-lg-end">
+                  <button class="btn btn-warning">Free Demat Account</button>
+                </div>
+              </div>
+            </div>
+          </nav>
+          <div class=""></div>
+    </div>
+</div>

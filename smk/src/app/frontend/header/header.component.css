@@ -1,0 +1,401 @@
+.nav1
+{
+    background: transparent;
+    color:white;
+    position:fixed;
+    width:100%;
+    top:0;
+    z-index:1;
+}
+
+.nav1.scrolled
+{
+    background-color: #F8F9FA;
+}
+
+/* FD6133 */
+/* F98F0B */
+.navb
+{
+    /* background-image: linear-gradient(25deg,#fa971e,#fd7146); */
+    background-image: url('/assets/images/bg.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    position: relative;
+    top: -30px;
+}
+
+.main
+{
+    backdrop-filter: blur(95px);
+}
+
+.dematbtn
+{
+    background-color: #fdad34;
+    background-image: linear-gradient(25deg,#ffb55a,#ff7348);
+    color:black;
+}
+
+.dematbtn:hover
+{
+    color: white;
+}
+
+.nav1 .logo
+{
+    width: 200px;
+}
+
+.dropd
+{
+    background: transparent;
+    border: 1px solid #ffb55a;
+}
+
+.dropd1:hover
+{
+    color:#000;
+    background: #fed8a0;
+}
+
+/* Home Content */
+.home
+{
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 140px;
+}
+
+.home .text1
+{
+    font-size: 70px;
+    color:#202425e8;
+    font-style: normal;
+    font-weight: 900 !important;
+    letter-spacing: -2.1px;
+    margin-top: 30px;
+}
+
+.home .text2
+{
+    font-size: 76px;
+    color:#202425e8;
+    font-style: normal;
+    font-weight: 900 !important;
+    /* letter-spacing: -2.1px; */
+    text-shadow: 1px 0px,
+                 0px 1px,
+                 1px 1px;
+    transition: all .5s;
+    line-height: 45px;
+}
+
+.home .smk
+{
+    font-size: 76px;
+    color:#202425e8;
+    font-style: normal;
+    font-weight: 900 !important;
+    /* letter-spacing: -2.1px; */
+    text-shadow: 1px 0px,
+                 0px 1px,
+                 1px 1px;
+    transition: all .5s;
+    background: none;
+    transform: translate(-50%, -50%);
+    transition: color 0.3s linear;
+    position: relative;
+}
+
+.home .smk:hover
+{
+    color: white;
+}
+
+.home .smk::before
+{
+    content: '';
+    left: 0;
+    bottom: -100%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* border-bottom-left-radius: 25%;
+    border-bottom-right-radius: 25%; */
+    background: linear-gradient(25deg,#464a4be8,#272b2ce8);
+    z-index: -1;
+    transition: transform 0.5s;
+    transform-origin: 0 0;
+    transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+    transform: scaleY(0);
+}
+
+.home .smk:hover::before
+{
+    transform: scaleY(-1);
+}
+
+.li1
+{
+    transition: all .2s;
+    background: none;
+    transition: color 0.2s linear;
+    position: relative;
+}
+
+.li1:hover
+{
+    color: white;
+}
+
+.li1::before
+{
+    content: '';
+    left: 0;
+    bottom: 7px;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(25deg,#464a4be8,#272b2ce8);
+    z-index: -1;
+    transition: transform 0.2s;
+    transform-origin: 1 1;
+    border-radius: 100%;
+    transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+    transform: scaleX(0);
+}
+
+.li1:hover::before
+{
+    transform: scaleX(1);
+}
+
+@media screen and (max-width: 950px) and (min-width: 350px) {
+    .home .text1
+    {
+        font-size: 25px;
+    }
+
+    .home .text2
+    {
+        font-size: 40px;
+        padding: 0;
+        width: 100%;
+        margin-left: -15px;
+    }
+
+    .home .smk
+    {
+        font-size:75px;
+    }
+
+    .home .smk::before
+    {
+        width: 266%;
+        height: 101%;
+        margin-left: -125px;
+        overflow: hidden;
+    }
+
+    .home .smk:hover::before
+    {
+        transform: scaleY(-0.75);
+    }
+
+    .li1
+    {
+        transition: all .2s;
+        background: none;
+        transition: color 0.2s linear;
+        position: relative;
+    }
+
+    .li1::before
+    {
+        content: '';
+        left: 0;
+        bottom: 7px;
+        position: absolute;
+        width: 18%;
+        height: 3px;
+        background: linear-gradient(25deg,#464a4be8,#272b2ce8);
+        z-index: -1;
+        transition: transform 0.2s;
+        transform-origin: 1 1;
+        border-radius: 100%;
+        transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+        transform: scaleX(0);
+    }
+}
+
+/* Cards */
+.main .cards
+{
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.main .cards 
+{
+    margin-top: 75px;
+}
+
+.main .cards h6
+{
+    font-weight: 900;
+    font-size: 15px;
+    color:black;
+}
+.main .cards p
+{
+    font-size: 13px;
+    color:gray;
+    line-height: 6px;
+}
+
+/* demat */
+
+.stickyinput
+{
+    background: #fff;
+    padding: 8px;
+    border-radius: 6px 6px 6px 6px;
+}
+
+.w85
+{
+    width: 85%;
+    max-width: 85%;
+}
+
+.margin-auto 
+{ 
+    margin: 0 auto;
+}
+
+.gap30{
+    gap: 30px;
+}
+
+.inputgroup
+{
+    width: 440px;
+}
+
+.dflex
+{
+    display: flex;
+}
+
+.flex-direction-column {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+       -ms-flex-direction: column;
+           flex-direction: column;
+}
+
+* 
+{
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.form-control.inputbg, .form-control.inputbg:hover {
+    background: #F2F5F9;
+    border: none;
+}
+
+.inputcta {
+    font-size: 12px;
+    font-weight: 900;
+}
+
+.inputbg
+{
+    border-radius: 6px 0px 0px 6px;
+}
+
+.form-control.inputbg, .form-control.inputbg:hover {
+    background: #F2F5F9;
+    border: none;
+}
+
+.inputbg:focus
+{
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+
+.inputcta {
+    border-radius: 0px 6px 6px 0px;
+    background: linear-gradient(25deg,#ffb55a,#ff7348);
+    box-shadow: 0px 4px 7px 0px rgba(50, 77, 103, 0.15);
+    border: none;
+    flex: 0 0 140px;
+    color: #000;
+}
+
+/* Second Div */
+.second
+{
+    background-color: #F3F6F8;
+}
+
+.second .content .heading1
+{
+    color: #8A93A0;
+    font-weight: 400;
+}
+
+.second .content .heading2
+{
+    color: #343A40;
+    font-weight: 600;
+}
+
+.cardbox
+{
+    height: 220px;
+    width: 216px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 1px 1px 15px #ebe8e8,
+                -1px -1px 15px #ebe8e8;
+}
+
+.cardbox:hover
+{
+    cursor: pointer;
+}
+
+.cardbox .text
+{
+    color: #8A93A0;
+    font-size: 18px;
+}
+
+.cardbox .text2
+{
+    color: #727a85;
+}
+
+.startbtn
+{
+    background-color: #fdad34;
+    background-image: linear-gradient(25deg,#ffb55a,#ff7348);
+    color:black;
+    box-shadow: 5px 0px 5px #DAE3EA,
+                -0px -5px 5px #DAE3EA,
+                -0px -0px 30px #DAE3EA,
+                0px 0px 30px #DAE3EA;
+                transition: all 0.3s;
+}
+
+.startbtn:hover
+{
+    color: #202020;
+    box-shadow: none;
+}

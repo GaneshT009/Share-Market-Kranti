@@ -1,0 +1,230 @@
+<div class="navb">
+  <nav class="nav1 navbar navbar-expand-lg rounded" [ngClass]="{'scrolled': isScrolled}" (window:scroll)="onWindowScroll()" aria-label="Thirteenth navbar example">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample11"
+        aria-controls="navbarsExample11" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse d-lg-flex"id="navbarsExample11">
+        <a class="navbar-brand col-lg-2 ms-4" routerLink="/frontend/front/home">
+          <img class="logo" src="/assets/images/smk-logo.png" alt="" />
+        </a>
+        <ul class="navbar-nav col-lg-6 justify-content-lg-center ms-5">
+          <li class="nav-item li1">
+            <a class="nav-link text-black" aria-current="page" routerLink="/frontend/front/home">Home</a>
+          </li>
+          <li class="nav-item dropdown li1">
+            <a class="nav-link dropdown-toggle text-black" href="#" data-bs-toggle="dropdown"
+              aria-expanded="false">About</a>
+            <ul class="dropdown-menu dropd">
+              <li>
+                <a class="dropdown-item dropd1" routerLink="/frontend/front/about">About Share Market Kranti</a>
+              </li>
+              <li><a class="dropdown-item dropd1" href="#">Blogs</a></li>
+            </ul>
+          </li>
+          <!-- <li class="nav-item li1">
+            <a class="nav-link text-black" routerLink="/frontend/front/products">Products</a>
+          </li> -->
+          <li class="nav-item li1">
+            <a class="nav-link text-black" routerLink="/frontend/front/courses">Courses</a>
+          </li>
+          <!-- <li class="nav-item li1">
+            <a class="nav-link text-black">Become a Partner</a>
+          </li> -->
+          <li class="nav-item li1">
+            <a class="nav-link text-black" routerLink="/frontend/front/contact">Contact Us</a>
+          </li>
+        </ul>
+        <div class="d-lg-flex col-lg-3 justify-content-lg-end">
+          <button class="btn btn-warning dematbtn">Free Demat Account</button>
+        </div>
+      </div>
+    </div>
+  </nav> 
+  <div class="main">
+    <div class="home container pb-2">
+      <p class="text1">Learn&nbsp;</p>
+      <p class="text2">Learn <span class="smk">Share Market Kranti</span></p>
+    </div>
+ 
+    <div class="cards container pb-3">
+      <div class="row">
+        <div class="col-3 mb-3 mb-sm-0">
+          <div class="cont-2 d-flex">
+            <div class="icon">
+              <img src="" alt="Icon">
+            </div>
+            <div class="text-2 ms-2">
+              <h6>1 Platform</h6>
+              <p>For All Investments</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-3 mb-3 mb-sm-0">
+          <div class="cont-2 d-flex">
+            <div class="icon">
+              <img src="" alt="Icon">
+            </div>
+            <div class="text-2 ms-2">
+              <h6>Trusted by 40L+</h6>
+              <p>Customers</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-3 mb-3 mb-sm-0">
+          <div class="cont-2 d-flex">
+            <div class="icon">
+              <img src="" alt="Icon">
+            </div>
+            <div class="text-2 ms-2">
+              <h6>Dedicated </h6>
+              <p>Personal Advisors</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-3 mb-3 mb-sm-0">
+          <div class="cont-2 d-flex">
+            <div class="icon">
+              <img src="" alt="Icon">
+            </div>
+            <div class="text-2 ms-2">
+              <h6>Award-winning</h6>
+              <p>Research </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="demat-acc ms-5 mt-5 pb-4">
+      <div class="w85 margin-auto mobw100 mobstickyform ">
+        <div class="dflex aligncenter mtop40 mobmtop0 gap30 wrap">
+          <div class="inputgroup dflex">
+            <div class="dflex stickyinput">
+              <div class="flex-direction-column">
+                <div>
+                  <div><span><input type="text"
+                        maxlength="10" class="input form-control inputbg inputwd w25"
+                        aria-invalid="false" placeholder="Enter Mobile Number"><span style="display: none;"
+                        class="ValidationMessage"></span></span>
+                  </div>
+                </div>
+              </div><input
+                type="submit"
+                value="OPEN DEMAT ACCOUNT" class="Button btn btn-primary inputcta black mobblackcta">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="second  pt-5">
+  <div class="data ps-4 pe-4 ms-4 me-4">
+  <div class="content text-center pt-4 pb-4">
+    <h1 class="heading1">A World of</h1>
+    <h1 class="heading2">Investment Opportunities</h1>
+  </div>
+  <div class="card1 d-flex justify-content-evenly">
+    <div class="one col-2">
+      <div class="cardbox mt-3 d-flex align-items-center justify-content-center row">
+        <div class="icon text-end">
+          <img src="" alt="Icon">
+        </div>
+        <p class="text">Equity or Stocks</p>
+        <p class="text2 text-end">--></p>
+      </div>
+      <div class="cardbox mt-3 d-flex align-items-center justify-content-center row">
+        <div class="icon text-end">
+          <img src="" alt="Icon">
+        </div>
+        <p class="text">Mutual Fund</p>
+        <p class="text2 text-end">--></p>
+      </div>
+      <div class="cardbox mt-3 d-flex align-items-center justify-content-center row">
+        <div class="icon text-end">
+          <img src="" alt="Icon">
+        </div>
+        <p class="text">IPO/Initial Public Offerings</p>
+        <p class="text2 text-end">--></p>
+      </div>
+    </div>
+    <div class="two col-2 d-flex align-items-center">
+      <div class="cardbox1">
+        <div class="cardbox mt-3 d-flex align-items-center justify-content-center row">
+          <div class="icon text-end">
+            <img src="" alt="Icon">
+          </div>
+        <p class="text">Futures & Options</p>
+        <p class="text2 text-end">--></p>
+      </div>
+        <div class="cardbox mt-3 d-flex align-items-center justify-content-center row">
+          <div class="icon text-end">
+            <img src="" alt="Icon">
+          </div>
+        <p class="text">Commodity</p>
+        <p class="text2 text-end">--></p>
+      </div>
+      </div>
+    </div>
+    <div class="two col-2 d-flex align-items-center">
+      <div class="cardbox2 pt-5 mt-5">
+        <div class="cardbox mt-3 d-flex align-items-center justify-content-center row">
+          <div class="icon text-end">
+            <img src="" alt="Icon">
+          </div>
+        <p class="text">Currency</p>
+        <p class="text2 text-end">--></p>
+      </div>
+        <div class="cardbox mt-3 d-flex align-items-center justify-content-center row">
+          <div class="icon text-end">
+            <img src="" alt="Icon">
+          </div>
+        <p class="text">US Stocks</p>
+      </div>
+      </div>
+    </div>
+    <div class="two col-2 d-flex align-items-center">
+      <div class="cardbox3">
+        <div class="cardbox mt-3 d-flex align-items-center justify-content-center row">
+          <div class="icon text-end">
+            <img src="" alt="Icon">
+          </div>
+        <p class="text">Portfolio Management Service(PMS)</p>
+      </div>
+        <div class="cardbox mt-3 d-flex align-items-center justify-content-center row">
+          <div class="icon text-end">
+            <img src="" alt="Icon">
+          </div>
+        <p class="text">Bonds / Fixed Income Instruments</p>
+      </div>
+      </div>
+    </div>
+    <div class="five col-2">
+      <div class="cardbox mt-3 d-flex align-items-center justify-content-center row">
+        <div class="icon text-end">
+          <img src="" alt="Icon">
+        </div>
+        <p class="text">Alternative Investment Funds (AIF)</p>
+      </div>
+      <div class="cardbox mt-3 d-flex align-items-center justify-content-center row">
+        <div class="icon text-end">
+          <img src="" alt="Icon">
+        </div>
+        <p class="text">Intelligent Advisory Portfolios (IAP)</p>
+      </div>
+      <div class="cardbox mt-3 d-flex align-items-center justify-content-center row">
+        <div class="icon text-end">
+          <img src="" alt="Icon">
+        </div>
+        <p class="text">Fixed Deposits (FD)</p>
+      </div>
+    </div>
+  </div>
+  <div class="startbutton d-flex justify-content-center pb-5 mt-5">
+    <button class="btn startbtn">Get Started Now --></button>
+  </div>
+</div>
+</div>
